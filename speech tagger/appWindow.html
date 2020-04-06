@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+
+    <title>shopping list</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="color.css">
+    <link href="simple-sidebar.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="d-flex " id="wrapper">
+        
+    <!-- Sidebar -->
+    <div class="bg-info " id="sidebar-wrapper">
+      <div class="sidebar-heading text-light font-weight-bold">Gilead Grammer </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action text-light bg-info">Grammer</a>
+        <a href="#" class="list-group-item list-group-item-action text-light bg-info">Notes</a>
+        <a href="#" class="list-group-item list-group-item-action text-light bg-info">Instruction</a>
+        <a href="#" class="list-group-item list-group-item-action text-light bg-info">Help</a>
+        <a href="#" class="list-group-item list-group-item-action text-light bg-info">Contact</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-info border-bottom">
+      
+
+          <button type="button" id="menu-toggle" class="btn btn-info border border-secondary">
+                <i >☰</i>
+               
+            </button>
+
+      
+
+
+      </nav>
+
+      <div class="container-fluid border-left">
+        <div id="info">
+            <p class="display-tags p-1 bg-primary">Adjective</p>
+             <p class="display-tags p-1 bg-danger">Noun</p>
+              <p class="display-tags p-1 bg-info">Pronoun</p>
+               <p class="display-tags p-1 bg-warning">Verb</p>
+                <p class="display-tags p-1 bg-secondary">Adverb</p>
+                 <p class="display-tags p-1 bg-success">Conjunction</p>
+                  <p class="display-tags p-1 bg-pink">Interjection</p>
+                   <p class="display-tags p-1 bg-dark text-light">Preposition</p>
+                   <p class="display-tags p-1 bg-orange text-light">Determiner</p>
+                   
+
+
+
+        </div>
+       <form>
+       <div class="form-group ">    
+       <textarea class="form-control" id="item" placeholder="Write something.." style="height:200px;" autofocus></textarea>
+               <button type="submit"  >Check</button>
+     </div>
+
+        </form>
+
+   <p id="display" class="p-3 " data-toggle="tooltip" title="your result" >Your result will show here!</p>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  
+ 
+
+  <!-- Menu Toggle Script -->
+  <script>
+        window.$ = window.jquery = require('jquery');
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+
+
+    });
+
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+    });
+  </script>
+
+<!--/.Navbar-->
+             
+ 
+    
+    
+
+  <!--Footer-->
+  
+  <!--/.Footer-->
+
+    <script src="appWin.js">
+        </script>
+        
+   
+</body>
+</html>

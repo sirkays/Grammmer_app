@@ -1,0 +1,196 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+body {
+  overflow-x: hidden;
+  background: #004d4d;
+}
+#info{
+  margin-top: 10px;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  background: green;
+
+
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+    background: #7386D5;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0px;
+ 
+}
+
+
+
+button { 
+color: #1D9AF2;
+background-color: #292D3E;
+border: 1px solid #1D9AF2;
+border-radius: 4px;
+padding: 0 15px;
+cursor: pointer;
+height:32px;
+font-size:14px;
+transition: all 0.2s ease-in-out;
+}
+button:hover { 
+animation: swing 1s ease;
+animation-iteration-count: 1;
+}
+@keyframes swing { 
+15% { 
+transform: translateX(5px);
+} 
+30% { 
+transform: translateX(-5px);
+} 
+50% { 
+transform: translateX(3px);
+} 
+65% { 
+transform: translateX(-3px);
+} 
+80% { 
+transform: translateX(2px);
+} 
+100% { 
+transform: translateX(0);
+} 
+}
+
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+   #sidebar-wrapper .list-group {
+  width: 15rem;
+    background: #7386D5;
+}
+
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+
+
+ #sidebar-wrapper {
+    margin-left: 0;
+
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  #sidebar-wrapper .list-group {
+  width: 12rem;
+    background: #7386D5;
+}
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -12rem;
+  }
+ 
+
+}
+@media only screen and (min-width: 600px) {
+ 
+
+   #sidebar-wrapper {
+    margin-left: 0;
+
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+   #sidebar-wrapper .list-group {
+  width: 12rem;
+    background: #7386D5;
+}
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -12rem;
+  }
+
+ 
+}
+@media only screen and (min-width: 992px) {
+
+  #sidebar-wrapper {
+    margin-left: 0;
+
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+ #sidebar-wrapper .list-group {
+  width: 15rem;
+    background: #7386D5;
+}
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+ 
+}
+@media only screen and (min-width: 1200px) {
+ 
+
+  #sidebar-wrapper {
+    margin-left: 0;
+
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+ #sidebar-wrapper .list-group {
+  width: 15rem;
+    background: #7386D5;
+}
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+
+ 
+}
+
